@@ -1,5 +1,5 @@
 <template>
-  <body class="overflow-y-hidden bg-gray-200 " >
+  <div class="overflow-y-hidden bg-gray-200 " >
         <div class=" bg-white sticky top-0 z-40 ">
             <nav class="shadow-lg 2xl:mx-auto sm:py-6 sm:px-7 py-5 lg:px-28 px-4">
                 <!-- For large and Medium-sized Screen -->
@@ -11,12 +11,12 @@
                         <img class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 cursor-pointer" src="https://i.ibb.co/qMwSVbQ/in.png" alt="instagram" />                                                             
                     </div>
                     <div class=" flex space-x-3 items-center">
-                        <img class="w-48" src="https://i.ibb.co/3fcQppW/LOGO.png" alt="logo" />                 
+                        <img class="w-48" src="https://i.ibb.co/T2t9vJJ/LOGOZ.png" alt="logo" />                 
                         <h1 class=" font-normal text-2xl leading-6 text-gray-800" ></h1>
                     </div>
                     <div class="hidden sm:flex flex-row space-x-4">
-                        <button class="rounded-md flex space-x-2 w-24 h-10 font-normal text-sm leading-3 text-indigo-700 bg-white border border-indigo-700 focus:outline-none focus:bg-gray-200 hover:bg-gray-200 duration-150 justify-center items-center" >Our services</button>
-                        <button class="rounded-md flex space-x-2 w-24 h-10 font-normal text-sm leading-3 text-white bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:bg-indigo-600 hover:bg-indigo-600 duration-150 justify-center items-center" >Footer</button>
+                        <button @click="scrollToAnchorPoint('services')" class="rounded-md flex space-x-2 w-24 h-10 font-normal text-sm leading-3 text-indigo-700 bg-white border border-indigo-700 focus:outline-none focus:bg-gray-200 hover:bg-gray-200 duration-150 justify-center items-center" >Our services</button>
+                        <button @click="scrollToAnchorPoint('footer')" class="rounded-md flex space-x-2 w-24 h-10 font-normal text-sm leading-3 text-white bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:bg-indigo-600 hover:bg-indigo-600 duration-150 justify-center items-center" >Footer</button>
                     </div>
 
                     <!-- Burger Icon -->
@@ -46,7 +46,7 @@
 
 
 
-    </body>
+    </div>
 </template>
 
 <script>
